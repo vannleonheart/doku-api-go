@@ -1,0 +1,37 @@
+package doku
+
+const (
+	VirtualAccountBCA     = "VA_BCA"
+	VirtualAccountMandiri = "VA_MANDIRI"
+	VirtualAccountBSI     = "VA_BSI"
+	VirtualAccountBRI     = "VA_BRI"
+	VirtualAccountPermata = "VA_PERMATA"
+	VirtualAccountCIMB    = "VA_CIMB"
+	VirtualAccountDOKU    = "VA_DOKU"
+	VirtualAccountDanamon = "VA_DANAMON"
+	VirtualAccountBNI     = "VA_BNI"
+
+	BillingTypeFixBill            = "FIX_BILL"
+	BillingTypeFix                = "FIX"
+	BillingTypeFixed              = "FIXED"
+	BillingTypeNoBill             = "NO_BILL"
+	BillingTypeBillVariableAmount = "BILL_VARIABLE_AMOUNT"
+	BillingTypeOpen               = "OPEN"
+	BillingTypeInstallment        = "INSTALLMENT"
+	BillingTypeMin                = "MIN"
+	BillingTypeOpenMin            = "OPEN_MIN"
+	BillingTypeOpenMax            = "OPEN_MAX"
+
+	TargetPathCheckout              = "/checkout/v1/payment"
+	TargetPathCheckStatus           = "/orders/v1/status"
+	TargetPathBCAVirtualAccount     = "/bca-virtual-account/v2/payment-code"
+	TargetPathMandiriVirtualAccount = "/mandiri-virtual-account/v2/payment-code"
+	TargetPathBRIVirtualAccount     = "/bri-virtual-account/v2/payment-code"
+	TargetPathBSIVirtualAccount     = "/bsm-virtual-account/v2/payment-code"
+	TargetPathDOKUVirtualAccount    = "/doku-virtual-account/v2/payment-code"
+	TargetPathCreditCard            = "/credit-card/v1/payment-page"
+	TargetPathDOKUWallet            = "/dokuwallet-emoney/v1/payment"
+	TargetPathOVO                   = "/ovo-emoney/v1/payment"
+	TargetPathShopeePay             = "/shopeepay-emoney/v2/order"
+	TargetPathB2BToken              = "/authorization/v1/access-token/b2b"
+)
