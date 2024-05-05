@@ -3,6 +3,7 @@ package doku
 import (
 	"errors"
 	"fmt"
+	"github.com/vannleonheart/goutil"
 	"net/http"
 	"time"
 )
@@ -33,7 +34,7 @@ func (c *Client) SendRequest(method, targetUri string, requestData interface{}, 
 
 	targetUrl := fmt.Sprintf("%s%s", c.Config.BaseUrl, targetUri)
 
-	if err := sendHttpRequest(method, targetUrl, requestData, &headers, result); err != nil {
+	if _, err = goutil.SendHttpRequest(method, targetUrl, requestData, &headers, result); err != nil {
 		return err
 	}
 
