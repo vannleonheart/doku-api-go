@@ -94,6 +94,13 @@ type VirtualAccountInfo struct {
 	HowToPayApi          string `json:"how_to_pay_api,omitempty"`
 }
 
+type VirtualAccountPayment struct {
+	Identifier []struct {
+		Name  string `json:"name"`
+		Value string `json:"value"`
+	} `json:"identifier"`
+}
+
 type Headers struct {
 	RequestId string `json:"request_id"`
 	Signature string `json:"signature"`
