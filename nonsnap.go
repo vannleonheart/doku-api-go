@@ -34,7 +34,7 @@ func (c *Client) SendRequest(method, targetUri string, requestData interface{}, 
 
 	targetUrl := fmt.Sprintf("%s%s", c.Config.BaseUrl, targetUri)
 
-	if _, err = goutil.SendHttpRequest(method, targetUrl, requestData, &headers, result); err != nil {
+	if _, err = goutil.SendHttpRequest(method, targetUrl, requestData, &headers, result, nil); err != nil {
 		return err
 	}
 
